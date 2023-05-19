@@ -56,7 +56,7 @@ COLLATE=utf8mb4_unicode_ci;
 CREATE TABLE `movies` (
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
     `title` VARCHAR(50) NOT NULL,
-    `release_year` DATE NOT NULL,
+    `release_year` INTEGER NOT NULL,
     `director` VARCHAR(50) NOT NULL,
     `duration` SMALLINT NOT NULL,
     `clasification` CHAR(8) NOT NULL,
