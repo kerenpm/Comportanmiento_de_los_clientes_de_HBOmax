@@ -57,8 +57,6 @@ CREATE TABLE `movies` (
     `title` VARCHAR(50) NOT NULL,
     `release_year` INTEGER NOT NULL,
     `director` VARCHAR(50) NOT NULL,
-    `duration` SMALLINT NOT NULL,
-    `clasification` CHAR(8) NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE 
     CURRENT_TIMESTAMP,
