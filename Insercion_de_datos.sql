@@ -2,7 +2,7 @@
 insert into customers (name, last_name, country) values ('Con', 'Hughesdon', 'Mexico');
 insert into customers (name, last_name, country) values ('Winthrop', 'Braffington', 'Panama');
 insert into customers (name, last_name, country) values ('Lira', 'Goring', 'Nicaragua');
-insert into customers (name, last_name, country) vlues ('Paulie', 'Mosedall', 'Honduras');
+insert into customers (name, last_name, country) values ('Paulie', 'Mosedall', 'Honduras');
 insert into customers (name, last_name, country) values ('Luciana', 'Roony', 'Haiti');
 insert into customers (name, last_name, country) values ('Tammie', 'Schroter', 'Brazil');
 insert into customers (name, last_name, country) values ('Ad', 'Linne', 'Chile');
