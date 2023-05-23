@@ -91,6 +91,7 @@ CREATE TABLE sessions (
 CREATE TABLE subscriptions (
     id SERIAL NOT NULL,
     account_id INT NOT NULL,
+    date_subscription DATE NOT NULL,
     date_billing DATE NOT NULL,
     payment_method VARCHAR(50) NOT NULL,
     current_plan VARCHAR(50) NOT NULL,
