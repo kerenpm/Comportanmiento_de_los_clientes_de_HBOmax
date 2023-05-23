@@ -94,16 +94,16 @@ CREATE TABLE series_categories (
 ;
 
 -- Tabla de lenguajes y series
-CREATE TABLE lenguages_series (
+CREATE TABLE languages_series (
     id SERIAL NOT NULL,
-    lenguage_id SERIAL NOT NULL,
+    language_id SERIAL NOT NULL,
     serie_id SERIAL NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
-    CONSTRAINT lenguages_series_lenguage_id_fkey FOREIGN KEY(lenguage_id)
-     REFERENCES lenguages(id),
-    CONSTRAINT lenguages_series_serie_id_foreign FOREIGN KEY(serie_id)
+    CONSTRAINT languages_series_language_id_fkey FOREIGN KEY(language_id)
+     REFERENCES languages(id),
+    CONSTRAINT languages_series_serie_id_foreign FOREIGN KEY(serie_id)
      REFERENCES series(id)
     ON UPDATE CASCADE
 )
