@@ -213,21 +213,21 @@ insert into languages (language) values ('Japanese');
 insert into languages (language) values ('Italian');
 
 -- Para la tabla categorías
-insert into categories (categorie) values ('Action');
-insert into categories (categorie) values ('Comedy');
-insert into categories (categorie) values ('Crime');
-insert into categories (categorie) values ('Documentaries');
-insert into categories (categorie) values ('Drama');
-insert into categories (categorie) values ('Fantasy and science');
-insert into categories (categorie) values ('Fiction');
-insert into categories (categorie) values ('Terror');
-insert into categories (categorie) values ('Suspense');
-insert into categories (categorie) values ('International');
-insert into categories (categorie) values ('Child and family');
-insert into categories (categorie) values ('Local productions');
-insert into categories (categorie) values ('Romance');
-insert into categories (categorie) values ('Original');
-insert into categories (categorie) values ('Popular');
+insert into categories (category) values ('Action');
+insert into categories (category) values ('Comedy');
+insert into categories (category) values ('Crime');
+insert into categories (category) values ('Documentaries');
+insert into categories (category) values ('Drama');
+insert into categories (category) values ('Fantasy and science');
+insert into categories (category) values ('Fiction');
+insert into categories (category) values ('Terror');
+insert into categories (category) values ('Suspense');
+insert into categories (category) values ('International');
+insert into categories (category) values ('Child and family');
+insert into categories (category) values ('Local productions');
+insert into categories (category) values ('Romance');
+insert into categories (category) values ('Original');
+insert into categories (category) values ('Popular');
 
 -- Para la tabla series
 insert into series (title, release_year, seasons, creator) values 
