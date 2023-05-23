@@ -75,9 +75,9 @@ CREATE TABLE accounts (
 ;
 
 -- Tabla de sesiones 
-CREATE TABLE `sessions` (
+CREATE TABLE sessions (
     id INT NOT NULL,
-    account_id INT UNSIGNED NOT NULL,
+    account_id INT NOT NULL,
     device VARCHAR(50) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
