@@ -90,7 +90,7 @@ CREATE TABLE sessions (
 -- Tabla de suscripciones 
 CREATE TABLE subscriptions (
     id INT NOT NULL,
-    account_id INT UNSIGNED NOT NULL,
+    account_id INT NOT NULL,
     date_billing DATE NOT NULL,
     payment_method VARCHAR(50) NOT NULL,
     current_plan VARCHAR(50) NOT NULL,
@@ -106,7 +106,7 @@ CREATE TABLE subscriptions (
 -- Tabla de perfiles
 CREATE TABLE profiles (
     id INT NOT NULL,
-    subscription_id INT UNSIGNED NOT NULL,
+    subscription_id INT NOT NULL,
     name VARCHAR(50) NOT NULL,
     color VARCHAR(50) NOT NULL,
     catgory VARCHAR(50) NOT NULL,
@@ -122,8 +122,8 @@ CREATE TABLE profiles (
 -- Tabla de perfil y serie
 CREATE TABLE profiles_series (
     id INT NOT NULL ,
-    profile_id INT UNSIGNED NOT NULL,
-    serie_id INT UNSIGNED NOT NULL,
+    profile_id INT NOT NULL,
+    serie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
@@ -138,8 +138,8 @@ CREATE TABLE profiles_series (
 -- Tabla de series y categorias
 CREATE TABLE series_categories (
     id INT NOT NULL,
-    serie_id INT UNSIGNED NOT NULL,
-    category_id INT UNSIGNED NOT NULL,
+    serie_id INT NOT NULL,
+    category_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
@@ -154,8 +154,8 @@ CREATE TABLE series_categories (
 -- Tabla de lenguajes y series
 CREATE TABLE lenguages_series (
     id INT NOT NULL,
-    lenguage_id INT UNSIGNED NOT NULL,
-    serie_id INT UNSIGNED NOT NULL,
+    lenguage_id INT NOT NULL,
+    serie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
@@ -170,8 +170,8 @@ CREATE TABLE lenguages_series (
 -- Tabla de perfiles y peliculas
 CREATE TABLE profiles_movies (
     id INT NOT NULL,
-    profile_id INT UNSIGNED NOT NULL,
-    movie_id INT UNSIGNED NOT NULL,
+    profile_id INT NOT NULL,
+    movie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
@@ -186,8 +186,8 @@ CREATE TABLE profiles_movies (
 -- Tabla de lenguajes y peliculas
 CREATE TABLE lenguages_movies (
     id INT NOT NULL,
-    lenguage_id INT UNSIGNED NOT NULL,
-    movie_id INT UNSIGNED NOT NULL,
+    lenguage_id INT NOT NULL,
+    movie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
@@ -202,8 +202,8 @@ CREATE TABLE lenguages_movies (
 -- Tabla de peliculas y categorias
 CREATE TABLE movies_categories (
     id INT NOT NULL,
-    movie_id INT UNSIGNED NOT NULL,
-    category_id INT UNSIGNED NOT NULL,
+    movie_id INT NOT NULL,
+    category_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
