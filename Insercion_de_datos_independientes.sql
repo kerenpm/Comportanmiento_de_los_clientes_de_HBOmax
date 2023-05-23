@@ -204,13 +204,13 @@ insert into movies (title, release_year, director, duration, clasification) valu
 insert into movies (title, release_year, director, duration, clasification) values ('City of Angels', 1998, 'Brad Silberling', 114, 'PG-13');
 
 -- Para la tabla lenguajes
-insert into lenguages (language) values ('Spanish');
-insert into lenguages (language) values ('English');
-insert into lenguages (language) values ('French');
-insert into lenguages (language) values ('Portuguese');
-insert into lenguages (language) values ('Chinese');
-insert into lenguages (language) values ('Japanese');
-insert into lenguages (language) values ('Italian');
+insert into languages (language) values ('Spanish');
+insert into languages (language) values ('English');
+insert into languages (language) values ('French');
+insert into languages (language) values ('Portuguese');
+insert into languages (language) values ('Chinese');
+insert into languages (language) values ('Japanese');
+insert into languages (language) values ('Italian');
 
 -- Para la tabla categorías
 insert into categories (categorie) values ('Action');
