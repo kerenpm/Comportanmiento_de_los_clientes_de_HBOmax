@@ -1,6 +1,6 @@
 -- Tabla de clientes
 CREATE TABLE customers (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     country VARCHAR(50) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE customers (
 
 -- Tabla de series
 CREATE TABLE series (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     title VARCHAR(50) NOT NULL,
     release_year DATE NOT NULL,
     creator VARCHAR(60) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE series (
 
 -- Tabla de lenguajes
 CREATE TABLE lenguages (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     lenguage VARCHAR(20) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -35,7 +35,7 @@ CREATE TABLE lenguages (
 
 -- Tabla de categorías
 CREATE TABLE categories (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     categorie VARCHAR(30) NOT NULL,
     classification VARCHAR(30) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -46,7 +46,7 @@ CREATE TABLE categories (
 
 -- Tabla de películas
 CREATE TABLE movies (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     title VARCHAR(50) NOT NULL,
     release_year INTEGER NOT NULL,
     director VARCHAR(50) NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE movies (
 
 -- Tabla de cuentas
 CREATE TABLE accounts (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     customer_id INT NOT NULL,
     first_name VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
@@ -76,7 +76,7 @@ CREATE TABLE accounts (
 
 -- Tabla de sesiones 
 CREATE TABLE sessions (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     account_id INT NOT NULL,
     device VARCHAR(50) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -89,7 +89,7 @@ CREATE TABLE sessions (
 
 -- Tabla de suscripciones 
 CREATE TABLE subscriptions (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     account_id INT NOT NULL,
     date_billing DATE NOT NULL,
     payment_method VARCHAR(50) NOT NULL,
@@ -105,7 +105,7 @@ CREATE TABLE subscriptions (
 
 -- Tabla de perfiles
 CREATE TABLE profiles (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     subscription_id INT NOT NULL,
     name VARCHAR(50) NOT NULL,
     color VARCHAR(50) NOT NULL,
@@ -121,7 +121,7 @@ CREATE TABLE profiles (
 
 -- Tabla de perfil y serie
 CREATE TABLE profiles_series (
-    id INT NOT NULL ,
+    id SERIAL NOT NULL ,
     profile_id INT NOT NULL,
     serie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -137,7 +137,7 @@ CREATE TABLE profiles_series (
 
 -- Tabla de series y categorias
 CREATE TABLE series_categories (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     serie_id INT NOT NULL,
     category_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -153,7 +153,7 @@ CREATE TABLE series_categories (
 
 -- Tabla de lenguajes y series
 CREATE TABLE lenguages_series (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     lenguage_id INT NOT NULL,
     serie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -169,7 +169,7 @@ CREATE TABLE lenguages_series (
 
 -- Tabla de perfiles y peliculas
 CREATE TABLE profiles_movies (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     profile_id INT NOT NULL,
     movie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -185,7 +185,7 @@ CREATE TABLE profiles_movies (
 
 -- Tabla de lenguajes y peliculas
 CREATE TABLE lenguages_movies (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     lenguage_id INT NOT NULL,
     movie_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -201,7 +201,7 @@ CREATE TABLE lenguages_movies (
 
 -- Tabla de peliculas y categorias
 CREATE TABLE movies_categories (
-    id INT NOT NULL,
+    id SERIAL NOT NULL,
     movie_id INT NOT NULL,
     category_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
