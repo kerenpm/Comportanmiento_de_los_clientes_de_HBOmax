@@ -13,7 +13,7 @@ CREATE TABLE customers (
 -- Tabla de series
 CREATE TABLE series (
     id SERIAL NOT NULL,
-    title VARCHAR(50) NOT NULL,
+    title VARCHAR(250) NOT NULL,
     release_year DATE NOT NULL,
     creator VARCHAR(60) NOT NULL,
     duration SMALLINT NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE categories (
 -- Tabla de películas
 CREATE TABLE movies (
     id SERIAL NOT NULL,
-    title VARCHAR(50) NOT NULL,
+    title VARCHAR(250) NOT NULL,
     release_year INTEGER NOT NULL,
     director VARCHAR(50) NOT NULL,
     duration SMALLINT NOT NULL,
