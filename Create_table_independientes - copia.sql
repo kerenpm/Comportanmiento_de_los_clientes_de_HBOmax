@@ -36,7 +36,7 @@ CREATE TABLE languages (
 -- Tabla de categorías
 CREATE TABLE categories (
     id SERIAL NOT NULL,
-    categorie VARCHAR(30) NOT NULL,
+    category VARCHAR(30) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
