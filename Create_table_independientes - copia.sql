@@ -15,6 +15,7 @@ CREATE TABLE series (
     id SERIAL NOT NULL,
     title VARCHAR(250) NOT NULL,
     release_year DATE NOT NULL,
+    seasons INT NOT NULL,
     creator VARCHAR(60) NOT NULL,
     duration SMALLINT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
