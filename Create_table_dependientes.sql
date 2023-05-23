@@ -126,16 +126,16 @@ CREATE TABLE profiles_movies (
 ;
 
 -- Tabla de lenguajes y peliculas
-CREATE TABLE lenguages_movies (
+CREATE TABLE languages_movies (
     id SERIAL NOT NULL,
-    lenguage_id SERIAL NOT NULL,
+    language_id SERIAL NOT NULL,
     movie_id SERIAL NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id),
-    CONSTRAINT lenguages_movies_lenguage_id_fkey FOREIGN KEY(lenguage_id)
-     REFERENCES lenguages(id),
-    CONSTRAINT lenguages_movies_movie_id_fkey FOREIGN KEY(movie_id)
+    CONSTRAINT languages_movies_language_id_fkey FOREIGN KEY(language_id)
+     REFERENCES languages(id),
+    CONSTRAINT languages_movies_movie_id_fkey FOREIGN KEY(movie_id)
      REFERENCES movies(id)
     ON UPDATE CASCADE
 )
