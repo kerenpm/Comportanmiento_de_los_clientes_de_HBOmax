@@ -17,7 +17,6 @@ CREATE TABLE series (
     release_year INT NOT NULL,
     seasons INT NOT NULL,
     creator VARCHAR(60) NOT NULL,
-    duration SMALLINT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
