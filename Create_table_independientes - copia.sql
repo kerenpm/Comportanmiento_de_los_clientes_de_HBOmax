@@ -24,9 +24,9 @@ CREATE TABLE series (
 ;
 
 -- Tabla de lenguajes
-CREATE TABLE lenguages (
+CREATE TABLE languages (
     id SERIAL NOT NULL,
-    lenguage VARCHAR(20) NOT NULL,
+    language VARCHAR(20) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
