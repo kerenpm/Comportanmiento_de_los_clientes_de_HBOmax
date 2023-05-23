@@ -61,7 +61,7 @@ CREATE TABLE movies (
 -- Tabla de cuentas
 CREATE TABLE accounts (
     id SERIAL NOT NULL,
-    customer_id INT NOT NULL,
+    customer_id SERIAL NOT NULL,
     first_name VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
     registration_date TIMESTAMP NOT NULL,
