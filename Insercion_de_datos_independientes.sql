@@ -102,7 +102,7 @@ insert into customers (name, last_name, country) values ('Blisse', 'Dalzell', 'P
 
 
 -- Para la tabla peliculas
-insert into movies (title, release_year, director, duration, clasification) values ("The Banshees of Inisherin", 2021, 'Martin McDonagh', 114, "R");
+insert into movies (title, release_year, director, duration, clasification) values ('The Banshees of Inisherin', 2021, 'Martin McDonagh', 114, 'R');
 insert into movies (title, release_year, director, duration, clasification) values ('Creed II', 2018, 'Steven Caple Jr.', 130, 'PG-13');
 insert into movies (title, release_year, director, duration, clasification) values ('Hereditary', 2018, 'Ari Aster', 128, 'R');
 insert into movies (title, release_year, director, duration, clasification) values ('Mortal Kombat', 2021, 'Simon McQuoid', 110, 'R');
