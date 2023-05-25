@@ -1,0 +1,14 @@
+A partir de la información creada, he formulado una cierta cantidad de preguntas que me ayudarán a poder crear mis gráficos más adelante. Son las siguientes:
+
+1. ¿Cuántos perfiles ven peliculas románticas?
+2. ¿Qué categorías de películas es la más vista en Perú?
+3. ¿Cuántos perfiles ven películas en español?
+4. ¿Cuántas cuentas si tienen suscripción?
+5. ¿Cuántas cuentas aún no se han suscrito?
+6. ¿Cuál es el país que más películas ve de comedia?
+7. ¿Quiénes se han suscrito con el plan de 29,90?
+8. ¿Cuál es el método de pago más usado ?
+9. ¿Cuál es el mes que hizo más ventas?
+10. ¿Qué categoría de series es la más pedida en latinoamérica?
+
+Nota adicional: Las respuestas de estas preguntas también serán a través de querys pero estarán en otro archivo.
