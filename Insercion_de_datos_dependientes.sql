@@ -889,3 +889,4 @@ insert into movies_categories (movie_id, category_id) values (46, 10);
 insert into movies_categories (movie_id, category_id) values (74, 6);
 insert into movies_categories (movie_id, category_id) values (48, 10);
 insert into movies_categories (movie_id, category_id) values (56, 1);
+insert into movies_categories (movie_id, category_id) values (61, 3);
