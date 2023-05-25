@@ -1,5 +1,2 @@
-Hola, este es mi proyecto de HBO Max Los datos que están aquí han sido creados 
-ya que no cuento con el acceso a su información pero si se ha tomado en cuenta que sean reales 
-como por ejemplo, la tabla lenguajes tiene en consideración los idiomas que cuenta la plataforma, 
-así como en la tabla películas se han colocado las más recientes en la plataforma con sus 
-atributos correctos.
+La plataforma Hbomax en los últimos años ha tenido más presencia dentro del mercado de streaming puesto a la gran cantidad de películas y series que cuenta, esto hizo que me llamara mucho la atención y me interesara averiguar un poco más sobre ella.
+Me hubiera encantado que toda mi información haya sido extraída directamente de la base de datos de la plataforma pero se sabe que por temas de privacidad no es posible eso, por lo tanto, los datos son creados pero reales. Con reales me refiero a que se ha llevado una investigación de página en página para poder encontrar las peliculas más taquilleras en estos dos últimos dos años, las series más vistas, los diferentes idiomas que puedes cambiar, los países donde está presente (ya que sería ilógico colocar países donde aún no se ha permitido), todas las categorías tanto de series como de películas, los métodos de pago, etc.
