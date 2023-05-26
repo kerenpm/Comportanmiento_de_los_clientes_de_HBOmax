@@ -1,4 +1,6 @@
--- Tabla series_vistas
+-- Para poder realizar los gráficos en PowerBI, primero he tenido que crear tablas en excel através de sentencias SQL. Son las siguientes:
+
+-- "Tabla series_vistas"
 
 SELECT hbo.profiles.name AS perfil,
 first_name AS nombre_de_Cuenta,
@@ -15,7 +17,7 @@ INNER JOIN hbo.subscriptions ON hbo.profiles.subscription_id = hbo.subscriptions
 INNER JOIN hbo.accounts ON hbo.subscriptions.account_id = hbo.accounts.id
 INNER JOIN hbo.customers ON hbo.accounts.customer_id = hbo.customers.id;
 
--- Tabla peliculas_vistas
+-- "Tabla peliculas_vistas"
 
 SELECT hbo.profiles.name AS perfil,
 first_name AS nombre_de_Cuenta,
@@ -32,13 +34,13 @@ INNER JOIN hbo.subscriptions ON hbo.profiles.subscription_id = hbo.subscriptions
 INNER JOIN hbo.accounts ON hbo.subscriptions.account_id = hbo.accounts.id
 INNER JOIN hbo.customers ON hbo.accounts.customer_id = hbo.customers.id;
 
--- Tabla clientes
+-- "Tabla clientes"
 
 SELECT CONCAT(hbo.customers.name, ' ',customers.last_name) AS Clientes,
 country AS Pais
 FROM hbo.customers;
 
--- Tabla suscripciones
+-- "Tabla suscripciones"
 
 SELECT accounts.first_name AS nombre_de_Cuenta,
 date_subscription AS Fecha_de_suscripcion,
@@ -49,14 +51,14 @@ price AS Precio
 FROM hbo.subscriptions
 INNER JOIN hbo.accounts ON hbo.subscriptions.account_id = hbo.accounts.id;
 
--- Tabla perfiles
+-- "Tabla perfiles"
 
 SELECT profiles.name AS Perfil,
 profiles.color,
 profiles.category AS Categoria
 FROM hbo.profiles;
 
--- Tablas películas
+-- "Tablas películas"
 
 SELECT title AS Pelicula,
 release_year AS Año_de_lanzamiento,
@@ -67,7 +69,7 @@ original_language AS Idioma_original,
 clasification AS Clasificacion
 FROM hbo.movies;
 
--- Tabla series
+-- "Tabla series"
 
 SELECT title AS Serie,
 release_year AS Año_de_lanzamiento,
@@ -77,7 +79,7 @@ category AS categoria,
 original_language AS Idioma_original
 FROM hbo.series;
 
--- Tabla cuentas
+-- "Tabla cuentas"
 
 SELECT first_name AS nombre_de_cuenta,
 email,
