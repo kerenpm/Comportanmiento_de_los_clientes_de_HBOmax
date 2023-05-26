@@ -1,4 +1,16 @@
-#Proyecto personal
-Hola, este es mi proyecto de HBO Max
-Los datos que están aquí han sido creados ya que no cuento con el acceso a su información pero si se ha tomado en cuenta
-que sean reales como por ejemplo, la tabla lenguajes tiene en consideración los idiomas que cuenta la plataforma, así como en la tabla películas se han colocado las más recientes en la plataforma con sus atributos correctos.
+# Proyecto personal 
+
+Hola, este es mi increíble proyecto de HBO Max
+
+Sin duda, las plataformas streming son el auge de estos tiempos y diariamente se encuentran almacenando millones de datos para luego poder usar esta información en decisiones que las ayudarán a crecer, es por eso que me vi interesada en realizar una investigación y usar también mi creación para poder realizar este poryecto.
+
+Para poder realizarlo he usado:
+* Lenguaje SQL (DML y DDL)
+* Investigación
+* Sistemas de gestión de bases de datos relacionales como PostgresSQL y MySQL
+* Estadística
+* Modelado de datos
+* Power Bi
+* Excel
+
+Espero que con este proyecto logres ver cuán útiles son los datos dentro de las empresas e inclusive de la vida diaria.
