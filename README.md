@@ -1,2 +1,3 @@
-Hola, este es mi proyecto de HBO Max 
-Los datos que están aquí han sido creados ya que no cuento con el acceso a la información de la plataforma pero si se ha tomado en cuenta que sean reales como por ejemplo, la tabla lenguajes tiene en consideración los idiomas que cuenta la plataforma, así como en la tabla películas se han colocado las más recientes en la plataforma con sus atributos correctos.
+Este es mi proyecto personal mejorado y la empresa investigada es Hbomax.
+Para poder crear la base de datos, he usado el manejador de datos PostgresSQL puesto que considero que tiene más funciones y herramientas que MySQL.
+Toda la información ha sido creada pero es realista, ya que tanto las peliculas como las series son las que actualmente se encuentran vigentes dentro de la plataforma.
