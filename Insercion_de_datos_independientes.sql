@@ -212,22 +212,6 @@ insert into languages (language) values ('Chinese');
 insert into languages (language) values ('Japanese');
 insert into languages (language) values ('Italian');
 
--- Para la tabla categorías
-insert into categories (category) values ('Action');
-insert into categories (category) values ('Comedy');
-insert into categories (category) values ('Crime');
-insert into categories (category) values ('Documentaries');
-insert into categories (category) values ('Drama');
-insert into categories (category) values ('Fantasy and science');
-insert into categories (category) values ('Fiction');
-insert into categories (category) values ('Terror');
-insert into categories (category) values ('Suspense');
-insert into categories (category) values ('International');
-insert into categories (category) values ('Child and family');
-insert into categories (category) values ('Local productions');
-insert into categories (category) values ('Romance');
-insert into categories (category) values ('Original');
-insert into categories (category) values ('Popular');
 
 -- Para la tabla series
 insert into series (title, release_year, seasons, creator) values 
