@@ -203,14 +203,6 @@ insert into movies (title, release_year, director, duration, clasification) valu
 insert into movies (title, release_year, director, duration, clasification) values ('Sleepless in Seattle', 1993, 'Nora Ephron', 106, 'R');
 insert into movies (title, release_year, director, duration, clasification) values ('City of Angels', 1998, 'Brad Silberling', 114, 'PG-13');
 
--- Para la tabla lenguajes
-insert into languages (language) values ('Spanish');
-insert into languages (language) values ('English');
-insert into languages (language) values ('French');
-insert into languages (language) values ('Portuguese');
-insert into languages (language) values ('Chinese');
-insert into languages (language) values ('Japanese');
-insert into languages (language) values ('Italian');
 
 
 -- Para la tabla series
