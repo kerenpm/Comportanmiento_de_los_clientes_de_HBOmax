@@ -14,3 +14,5 @@ Para poder realizarlo he usado:
 * Excel
 
 Espero que con este proyecto logres ver cuán útiles son los datos dentro de las empresas e inclusive de la vida diaria.
+
+NOTA: la información que hay en el branch "main" es la que se usó para MySQL y en el branch "ajustes" se encuentra el mismo proyecto pero con algunas mejoras
